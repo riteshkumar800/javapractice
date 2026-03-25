@@ -99,4 +99,48 @@
 // }
 
 // #############################################################################################################################
+// ##INPUT
 
+import java.util.Scanner;
+
+public class main{
+
+    public static void main(String[] args){
+
+        Scanner scanner= new Scanner(System.in);
+
+        // System.out.println("Enter your name: ");
+        System.out.print("Enter your name: ");
+        String name=scanner.nextLine();
+        // String name=scanner.next();
+
+       System.out.print("Enter you Age: ");
+       int age=scanner.nextInt();
+
+
+       System.out.print("Enter your gpa: ");
+       double gpa=scanner.nextDouble();
+
+       System.out.print("Are you a Studend? (true/false): ");
+       boolean isStudent=scanner.nextBoolean();
+
+        
+        System.out.println("Hello "+ name);
+        System.out.println("You are "+ age + " years old");
+        System.out.println("Your gpa is: "+gpa);
+        System.out.println("isStudent: "+ isStudent);
+
+
+        if(isStudent){
+            System.out.println("You are enrolled as a Student");
+        }
+        else{
+            System.out.println("You are not enrolled");
+        }
+
+
+        scanner.close();
+
+    }
+
+}
