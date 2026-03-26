@@ -171,26 +171,37 @@
 
 
 // #############################################################################################################################
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class main{
-    public static void main(String[] args){
-        Scanner scanner=new Scanner(System.in);
+// public class main{
+//     public static void main(String[] args){
+//         Scanner scanner=new Scanner(System.in);
 
-        double width=0;
-        double height=0;
-        double area=0;
+//         double width=0;
+//         double height=0;
+//         double area=0;
 
-        System.out.print("Enter the width: ");
-        width=scanner.nextDouble();
+//         System.out.print("Enter the width: ");
+//         width=scanner.nextDouble();
 
-        System.out.print("Enter the height: ");
-        height=scanner.nextDouble();
+//         System.out.print("Enter the height: ");
+//         height=scanner.nextDouble();
 
-        area=width*height;
+//         area=width*height;
 
-        System.out.print("Area is "+area+"cm2");
+//         System.out.print("Area is "+area+"cm2");
+
+//         scanner.close();
 
         
-    }
-}
+//     }
+// }
+
+// #############################################################################################################################
+
+// MAD LIBS GAME    
+import java.util.Scanner;
+
+
+
+
