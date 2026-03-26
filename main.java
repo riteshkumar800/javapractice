@@ -101,46 +101,71 @@
 // #############################################################################################################################
 // ##INPUT
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
-public class main{
+// public class main{
 
-    public static void main(String[] args){
+//     public static void main(String[] args){
 
-        Scanner scanner= new Scanner(System.in);
+//         Scanner scanner= new Scanner(System.in);
 
-        // System.out.println("Enter your name: ");
-        System.out.print("Enter your name: ");
-        String name=scanner.nextLine();
-        // String name=scanner.next();
+//         // System.out.println("Enter your name: ");
+//         System.out.print("Enter your name: ");
+//         String name=scanner.nextLine();
+//         // String name=scanner.next();
 
-       System.out.print("Enter you Age: ");
-       int age=scanner.nextInt();
+//        System.out.print("Enter you Age: ");
+//        int age=scanner.nextInt();
 
 
-       System.out.print("Enter your gpa: ");
-       double gpa=scanner.nextDouble();
+//        System.out.print("Enter your gpa: ");
+//        double gpa=scanner.nextDouble();
 
-       System.out.print("Are you a Studend? (true/false): ");
-       boolean isStudent=scanner.nextBoolean();
+//        System.out.print("Are you a Studend? (true/false): ");
+//        boolean isStudent=scanner.nextBoolean();
 
         
-        System.out.println("Hello "+ name);
-        System.out.println("You are "+ age + " years old");
-        System.out.println("Your gpa is: "+gpa);
-        System.out.println("isStudent: "+ isStudent);
+//         System.out.println("Hello "+ name);
+//         System.out.println("You are "+ age + " years old");
+//         System.out.println("Your gpa is: "+gpa);
+//         System.out.println("isStudent: "+ isStudent);
 
 
-        if(isStudent){
-            System.out.println("You are enrolled as a Student");
-        }
-        else{
-            System.out.println("You are not enrolled");
-        }
+//         if(isStudent){
+//             System.out.println("You are enrolled as a Student");
+//         }
+//         else{
+//             System.out.println("You are not enrolled");
+//         }
 
 
-        scanner.close();
+//         scanner.close();
+
+//     }
+
+// }
+
+// #############################################################################################################################
+
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args){
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age=scanner.nextInt();
+
+        scanner.nextLine(); // THIS LINE IS VERY IMPORTANT AS \n WILL BE TAKEN AS INPUT FOR THE NEXT INPUT TAKING AUTOMATICALLY, TRY IT
+
+        System.out.print("Enter your favourite color: ");
+        String color=scanner.nextLine();
+
+        System.out.print("you are "+ age + "years old");
+        System.out.print("Your favourite color is: "+ color);
+
+
+
 
     }
-
 }
+
