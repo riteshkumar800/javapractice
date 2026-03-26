@@ -147,25 +147,50 @@
 
 // #############################################################################################################################
 
+// import java.util.Scanner;
+
+// public class main {
+//     public static void main(String[] args){
+//         Scanner scanner=new Scanner(System.in);
+//         System.out.print("Enter your age: ");
+//         int age=scanner.nextInt();
+
+//         scanner.nextLine(); // THIS LINE IS VERY IMPORTANT AS \n WILL BE TAKEN AS INPUT FOR THE NEXT INPUT TAKING AUTOMATICALLY, TRY IT
+
+//         System.out.print("Enter your favourite color: ");
+//         String color=scanner.nextLine();
+
+//         System.out.print("you are "+ age + "years old");
+//         System.out.print("Your favourite color is: "+ color);
+
+
+
+
+//     }
+// }
+
+
+// #############################################################################################################################
 import java.util.Scanner;
 
-public class main {
+public class main{
     public static void main(String[] args){
         Scanner scanner=new Scanner(System.in);
-        System.out.print("Enter your age: ");
-        int age=scanner.nextInt();
 
-        scanner.nextLine(); // THIS LINE IS VERY IMPORTANT AS \n WILL BE TAKEN AS INPUT FOR THE NEXT INPUT TAKING AUTOMATICALLY, TRY IT
+        double width=0;
+        double height=0;
+        double area=0;
 
-        System.out.print("Enter your favourite color: ");
-        String color=scanner.nextLine();
+        System.out.print("Enter the width: ");
+        width=scanner.nextDouble();
 
-        System.out.print("you are "+ age + "years old");
-        System.out.print("Your favourite color is: "+ color);
+        System.out.print("Enter the height: ");
+        height=scanner.nextDouble();
 
+        area=width*height;
 
+        System.out.print("Area is "+area+"cm2");
 
-
+        
     }
 }
-
