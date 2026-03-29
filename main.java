@@ -235,8 +235,98 @@
 // SEE FILE SHOPPINGCART
 
 // #############################################################################################################################
+// RANDOM
+// import java.util.Random;
+// public class main{
+//     public static void main(String[] args){
+
+//         Random random = new Random();
 
 
+//         int number1;
+//         int number2;
+//         int number3;
+//         double number;
+//         number=random.nextDouble();
+//         boolean isHeads;
+//         isHeads=random.nextBoolean();
+        
+
+//         number1=random.nextInt();
+//         number2=random.nextInt(1,101);
+//         number3=random.nextInt(1,101);
+
+//         System.out.println(number1);
+//         System.out.println(number2);
+//         System.out.println(number3);
+//         System.out.println(number);
+//         System.out.println(isHeads);
+
+//         if(isHeads){
+//             System.out.println("HEADS");
+//         }
+//         else{
+//             System.out.println("Tails");
+//         }
+
+        
+
+
+//     }
+// };
+
+
+// #############################################################################################################################
+// Hypteneous
+import java.util.Scanner;
+public class main{
+    public static void main(String[] args){
+
+        Scanner scanner=new Scanner(System.in);
+
+        // double a;
+        // double b;
+        // double c;
+
+        // System.out.print("Enter the length of side A: ");
+        // a=scanner.nextDouble();
+
+        // System.out.print("Enter the side B: ");
+        // b=scanner.nextDouble();
+
+        // c=Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+        // System.out.println("The hypotenous side(c) is: "+c+"cm");
+
+
+
+        double r;
+        double c;
+        double a;
+        double v;
+
+        System.out.print("Enter the radius: ");
+        r=scanner.nextDouble();
+
+        c=2*Math.PI*r;
+        a=Math.PI*Math.pow(r,2);
+        v=(4.0/3.0)*Math.PI*Math.pow(r,3);
+
+
+        System.out.printf("The circumference is: %.1fcm\n", c);
+        System.out.printf("The area is: %.1fcm\n", a);
+        System.out.printf("The volume is: %.1fcm\n", v);
+
+        scanner.close();
+
+
+
+
+
+
+
+    }
+}
 
 
 
