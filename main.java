@@ -278,48 +278,78 @@
 
 // #############################################################################################################################
 // Hypteneous
+// import java.util.Scanner;
+// public class main{
+//     public static void main(String[] args){
+
+//         Scanner scanner=new Scanner(System.in);
+
+//         // double a;
+//         // double b;
+//         // double c;
+
+//         // System.out.print("Enter the length of side A: ");
+//         // a=scanner.nextDouble();
+
+//         // System.out.print("Enter the side B: ");
+//         // b=scanner.nextDouble();
+
+//         // c=Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+
+//         // System.out.println("The hypotenous side(c) is: "+c+"cm");
+
+
+
+//         double r;
+//         double c;
+//         double a;
+//         double v;
+
+//         System.out.print("Enter the radius: ");
+//         r=scanner.nextDouble();
+
+//         c=2*Math.PI*r;
+//         a=Math.PI*Math.pow(r,2);
+//         v=(4.0/3.0)*Math.PI*Math.pow(r,3);
+
+
+//         System.out.printf("The circumference is: %.1fcm\n", c);
+//         System.out.printf("The area is: %.1fcm\n", a);
+//         System.out.printf("The volume is: %.1fcm\n", v);
+
+//         scanner.close();
+
+
+
+
+
+
+
+//     }
+// }
+
+// #############################################################################################################################
+// SPECIFIERS
+
 import java.util.Scanner;
 public class main{
     public static void main(String[] args){
 
-        Scanner scanner=new Scanner(System.in);
 
-        // double a;
-        // double b;
-        // double c;
-
-        // System.out.print("Enter the length of side A: ");
-        // a=scanner.nextDouble();
-
-        // System.out.print("Enter the side B: ");
-        // b=scanner.nextDouble();
-
-        // c=Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
-
-        // System.out.println("The hypotenous side(c) is: "+c+"cm");
+        String name="Spongebob";
+        char fl='s';
+        int age=30;
+        double height=60.5;
+        boolean isEmployed=true;
 
 
+        System.out.printf("Hello %s\n", name);
+        System.out.printf("Your name start with a %c\n", fl);
+        System.out.printf("you are %d years old\n", age);
+        System.out.printf("You are %f inches tall\n", height);
+        System.out.printf("Employed: %b\n", isEmployed);
 
-        double r;
-        double c;
-        double a;
-        double v;
-
-        System.out.print("Enter the radius: ");
-        r=scanner.nextDouble();
-
-        c=2*Math.PI*r;
-        a=Math.PI*Math.pow(r,2);
-        v=(4.0/3.0)*Math.PI*Math.pow(r,3);
-
-
-        System.out.printf("The circumference is: %.1fcm\n", c);
-        System.out.printf("The area is: %.1fcm\n", a);
-        System.out.printf("The volume is: %.1fcm\n", v);
-
-        scanner.close();
-
-
+        System.out.printf("%s is %d years old", name ,age);
 
 
 
@@ -327,6 +357,7 @@ public class main{
 
     }
 }
+
 
 
 
