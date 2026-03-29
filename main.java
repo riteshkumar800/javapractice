@@ -351,6 +351,32 @@ public class main{
 
         System.out.printf("%s is %d years old", name ,age);
 
+        double price1=9.99;
+        double price2=1000000.15;
+        double price3=-54.01;
+
+        System.out.printf("%.3f\n", price1);
+        System.out.printf("%.4f\n", price2);
+        System.out.printf("%.1f\n",price3);
+
+
+
+        System.out.printf("%+.2f\n", price1);
+        System.out.printf("%+.2f\n", price2);
+        System.out.printf("%+.2f\n",price3);
+
+
+
+        System.out.printf("%,.2f\n", price1);
+        System.out.printf("%,.2f\n", price2);
+        System.out.printf("%,.2f\n",price3);
+
+
+        System.out.printf("%(.2f\n", price1);
+        System.out.printf("%(.2f\n", price2);
+        System.out.printf("%(.2f\n",price3);
+
+
 
 
 
