@@ -331,58 +331,130 @@
 // #############################################################################################################################
 // SPECIFIERS
 
+// import java.util.Scanner;
+// public class main{
+//     public static void main(String[] args){
+
+
+//         String name="Spongebob";
+//         char fl='s';
+//         int age=30;
+//         double height=60.5;
+//         boolean isEmployed=true;
+
+
+//         System.out.printf("Hello %s\n", name);
+//         System.out.printf("Your name start with a %c\n", fl);
+//         System.out.printf("you are %d years old\n", age);
+//         System.out.printf("You are %f inches tall\n", height);
+//         System.out.printf("Employed: %b\n", isEmployed);
+
+//         System.out.printf("%s is %d years old", name ,age);
+
+//         double price1=9.99;
+//         double price2=1000000.15;
+//         double price3=-54.01;
+
+//         System.out.printf("%.3f\n", price1);
+//         System.out.printf("%.4f\n", price2);
+//         System.out.printf("%.1f\n",price3);
+
+
+
+//         System.out.printf("%+.2f\n", price1);
+//         System.out.printf("%+.2f\n", price2);
+//         System.out.printf("%+.2f\n",price3);
+
+
+
+//         System.out.printf("%,.2f\n", price1);
+//         System.out.printf("%,.2f\n", price2);
+//         System.out.printf("%,.2f\n",price3);
+
+
+//         System.out.printf("%(.2f\n", price1);
+//         System.out.printf("%(.2f\n", price2);
+//         System.out.printf("%(.2f\n",price3);
+
+
+
+
+
+
+//     }
+// }
+
+// #############################################################################################################################
+// NESTED IF ELSE
+
+// public class main{
+//     public static void main(String[] args){
+//         boolean isstudent=true;
+//         boolean issenior=true;
+//         double price=9.99;
+
+//         if(isstudent){
+//             if(issenior){
+//                 System.out.println("you get a senior discount of 20%");
+//                 System.out.println("you get a student discount of 10%");
+//                 price*=0.7;
+
+//             }
+//             else{
+//                 System.out.println("you get a student discount of 10% ");
+//                 price*=0.9;
+//             }
+
+//         }
+
+//         else{
+//             if(isstudent){
+//                 System.out.println("you get a senior discount of 10%");
+//                 price*=0.9;
+//             }
+//             else{
+//                 price*=1;
+//             }
+//         }
+
+
+//     }
+    
+// }
+
+// #############################################################################################################################
+// SUBSTRING
 import java.util.Scanner;
 public class main{
     public static void main(String[] args){
 
+        Scanner scanner=new Scanner(System.in);
 
-        String name="Spongebob";
-        char fl='s';
-        int age=30;
-        double height=60.5;
-        boolean isEmployed=true;
+        String email;
+        String username;
+        String domain;
 
+        System.out.print("Enter your Email: ");
 
-        System.out.printf("Hello %s\n", name);
-        System.out.printf("Your name start with a %c\n", fl);
-        System.out.printf("you are %d years old\n", age);
-        System.out.printf("You are %f inches tall\n", height);
-        System.out.printf("Employed: %b\n", isEmployed);
+        email=scanner.nextLine();
 
-        System.out.printf("%s is %d years old", name ,age);
-
-        double price1=9.99;
-        double price2=1000000.15;
-        double price3=-54.01;
-
-        System.out.printf("%.3f\n", price1);
-        System.out.printf("%.4f\n", price2);
-        System.out.printf("%.1f\n",price3);
+        if(email.contains("@")){
+            username=email.substring(0,email.indexOf("@"));
+            domain=email.substring(email.indexOf("@")+1);
+            System.out.println(username);
+            System.out.println(domain);
+        }
+        else{
+            System.out.println("Emails must contain @");
+        }
 
 
 
-        System.out.printf("%+.2f\n", price1);
-        System.out.printf("%+.2f\n", price2);
-        System.out.printf("%+.2f\n",price3);
-
-
-
-        System.out.printf("%,.2f\n", price1);
-        System.out.printf("%,.2f\n", price2);
-        System.out.printf("%,.2f\n",price3);
-
-
-        System.out.printf("%(.2f\n", price1);
-        System.out.printf("%(.2f\n", price2);
-        System.out.printf("%(.2f\n",price3);
+    }}
 
 
 
 
-
-
-    }
-}
 
 
 
