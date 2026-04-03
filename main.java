@@ -424,33 +424,62 @@
 
 // #############################################################################################################################
 // SUBSTRING
-import java.util.Scanner;
-public class main{
-    public static void main(String[] args){
+// import java.util.Scanner;
+// public class main{
+//     public static void main(String[] args){
 
-        Scanner scanner=new Scanner(System.in);
+//         Scanner scanner=new Scanner(System.in);
 
-        String email;
-        String username;
-        String domain;
+//         String email;
+//         String username;
+//         String domain;
 
-        System.out.print("Enter your Email: ");
+//         System.out.print("Enter your Email: ");
 
-        email=scanner.nextLine();
+//         email=scanner.nextLine();
 
-        if(email.contains("@")){
-            username=email.substring(0,email.indexOf("@"));
-            domain=email.substring(email.indexOf("@")+1);
-            System.out.println(username);
-            System.out.println(domain);
-        }
-        else{
-            System.out.println("Emails must contain @");
-        }
+//         if(email.contains("@")){
+//             username=email.substring(0,email.indexOf("@"));
+//             domain=email.substring(email.indexOf("@")+1);
+//             System.out.println(username);
+//             System.out.println(domain);
+//         }
+//         else{
+//             System.out.println("Emails must contain @");
+//         }
 
 
 
-    }}
+//     }}
+
+// #############################################################################################################################
+// TERNARY
+
+//  import java.util.Scanner;
+// public class main{
+//     public static void main(String[] args){
+
+//       Scanner scanner=new Scanner(System.in);
+
+//     //   int income=9000000;
+//     //   double taxrate=(income>=40000)?0.25:0.19;
+
+//     //   System.out.println(taxrate);
+
+
+//     // int number=4;
+//     // String isodd=(number%2==0)? "Even":"Odd";
+//     // System.out.println(isodd);
+
+
+
+
+
+
+//     }}
+
+
+
 
 
 
