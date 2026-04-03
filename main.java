@@ -480,26 +480,57 @@
 
 // #############################################################################################################################
 // SWITCH CASE
+// import java.util.Scanner;
+
+// public class main{
+//     public static void main(String[] args){
+//         Scanner scanner=new Scanner(System.in);
+
+//         System.out.print("Enter the Day of the week: ");
+//         String day=scanner.nextLine();
+
+
+//         switch(day){
+//             case "Monday" , "Tuesday", "Wednesday", "Thursday","Friday" ->
+//                       System.out.println("It is a weekday ");
+
+//              case "Saturday", "Sunday" ->
+//              System.out.println("It is a Weekend ")  ;   
+             
+             
+//              default -> System.out.println(day + "is not day");
+//         }
+//     }
+    
+// }
+// #############################################################################################################################
+// CALCULATOR
 import java.util.Scanner;
 
 public class main{
     public static void main(String[] args){
+
         Scanner scanner=new Scanner(System.in);
 
-        System.out.print("Enter the Day of the week: ");
-        String day=scanner.nextLine();
+        double num1;
+        double num2;
+        char operator;
+        double result;
 
 
-        switch(day){
-            case "Monday" , "Tuesday", "Wednesday", "Thursday","Friday" ->
-                      System.out.print("It is a weekday ");
+        System.out.print("Enter the first number: ");
 
-             case "Saturday", "Sunday" ->
-             System.out.print("It is a Weekend ")  ;      
-        }
-    }
-    
-}
+        num1=scanner.nextDouble();
+
+        System.out.print("Enter the second number: ");
+
+        num2=scanner.nextDouble();
+
+
+
+
+    }}
+
 
 
 
