@@ -505,31 +505,99 @@
 // }
 // #############################################################################################################################
 // CALCULATOR
+// import java.util.Scanner;
+
+// public class main{
+//     public static void main(String[] args){
+
+//         Scanner scanner=new Scanner(System.in);
+
+//         double num1;
+//         double num2;
+//         char operator;
+//         double result=0;
+//         boolean isvalid=true;
+
+
+
+//         System.out.print("Enter the first number: ");
+
+//         num1=scanner.nextDouble();
+
+
+//         System.out.print("Enter an operator (+, -, *, /, ^): ");
+//         operator=scanner.next().charAt(0);
+
+//         System.out.print("Enter the second number: ");
+
+//         num2=scanner.nextDouble();
+
+
+//         switch(operator){
+//             case '+'-> result=num1+num2;
+//             case '-'-> result=num1-num2;
+//             case '*'-> result=num1*num2;
+//             case '/'-> {
+//                 if(num2==0){
+//                     System.out.println("cannot divide by zero: ");
+//                     isvalid=false;
+//                 }
+//                 else{
+//                     result=num1/num2;
+//                 }
+
+//             }
+                
+//             case '^'-> result=Math.pow(num1,num2);
+
+//             default ->{
+//                 System.out.println("Invalid operator!");
+//                                     isvalid=false;
+
+//             }
+//         }
+       
+
+//         if(isvalid)
+//         System.out.println(result);
+
+//         scanner.close();
+
+
+
+
+//     }}
+
+// #############################################################################################################################
+// LOGICAL OPERATOR
 import java.util.Scanner;
 
 public class main{
     public static void main(String[] args){
 
-        Scanner scanner=new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        double num1;
-        double num2;
-        char operator;
-        double result;
+        double temp= -10;
+        boolean isSunny=true;
 
 
-        System.out.print("Enter the first number: ");
+        if(temp<=30 && temp>=0 && isSunny){
+            System.out.println("The weather is GOOD ");
+            System.out.println("It is Sunny outside ");
+        }
+        else if(temp<=30 && temp>=0 && !isSunny){
+            System.out.println("The weather is GOOD ");
+            System.out.println("It is Sunny outside ");
+        }
+        else if(temp>30 ||  temp<0 ){
+            System.out.println("The weather is bad ");
+            // System.out.println("It is Sunny outside ");
+        }
+        
 
-        num1=scanner.nextDouble();
 
-        System.out.print("Enter the second number: ");
-
-        num2=scanner.nextDouble();
-
-
-
-
-    }}
+    }
+}
 
 
 
