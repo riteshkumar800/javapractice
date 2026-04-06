@@ -595,6 +595,21 @@ public class main{
         }
         
 
+        String username;
+
+        System.out.println("Enter your username: ");
+        username=scanner.nextLine();
+
+        if(username.length()<4 || username.length()>12){
+            System.out.println("username must be 4-12 characters");
+
+        }
+        else{
+            System.out.println("Welcome "+ username);
+        }
+
+        scanner.close();
+
 
     }
 }
