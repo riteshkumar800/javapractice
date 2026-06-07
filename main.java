@@ -614,6 +614,32 @@
 //     }
 // }
 
+// #############################################################################################################################
+// WHILE LOOP
+
+import java.util.Scanner;
+public class main {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+
+        int age=0;
+
+        System.out.print("Enter the age: ");
+        age=scanner.nextInt();
+
+
+        while (age<0){
+            System.out.println("age cannot be negative ");
+            System.out.print("Enter your age: ");
+
+            age=scanner.nextInt();
+
+        }
+        System.out.printf("Your are %d years old \n", age );
+        scanner.close();
+    }
+}
+
 
 
 
