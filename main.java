@@ -642,23 +642,58 @@
 
 // #############################################################################################################################
 // FOR LOOP
-import java.util.Scanner;
-public class main {
+// import java.util.Scanner;
+// public class main {
 
-    public static void main(String[] args) throws InterruptedException{
-        Scanner scanner= new Scanner(System.in);
+//     public static void main(String[] args) throws InterruptedException{
+//         Scanner scanner= new Scanner(System.in);
 
-        System.out.println("Enter the stater: ");
-        int start=scanner.nextInt();
-        for(int i=start;i>0;i--){
-            System.out.println(i);
-            Thread.sleep(1000);
+//         System.out.println("Enter the stater: ");
+//         int start=scanner.nextInt();
+//         for(int i=start;i>0;i--){
+//             System.out.println(i);
+//             Thread.sleep(1000);
+//         }
+
+//         System.out.println("Happy NEW YEAR ");
+
+//     }
+// }
+
+// #############################################################################################################################
+// FUNCTION OR METHODS
+
+public class main{
+
+    public static void main(String[] args){
+
+        happyBirthday("ritesh", 25);
+        int age =21;
+        boolean res=check(age);
+        if(res){
+            System.out.println("you can sign up!");
+        }
+        else{
+            System.out.println("You are not eligible");
         }
 
-        System.out.println("Happy NEW YEAR ");
 
     }
+
+    static void happyBirthday(String name , int age){
+
+        System.out.println("Happy birthday " + name);
+        System.out.println("you are now "+ age + " years old");
+
+    }
+    static  boolean check(int age){
+        return age>=18;
+
+    }
+
 }
+
+
 
 
 
