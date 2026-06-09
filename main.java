@@ -663,35 +663,85 @@
 // #############################################################################################################################
 // FUNCTION OR METHODS
 
-public class main{
+// public class main{
 
+//     public static void main(String[] args){
+
+//         happyBirthday("ritesh", 25);
+//         int age =21;
+//         boolean res=check(age);
+//         if(res){
+//             System.out.println("you can sign up!");
+//         }
+//         else{
+//             System.out.println("You are not eligible");
+//         }
+
+
+//     }
+
+//     static void happyBirthday(String name , int age){
+
+//         System.out.println("Happy birthday " + name);
+//         System.out.println("you are now "+ age + " years old");
+
+//     }
+//     static  boolean check(int age){
+//         return age>=18;
+
+//     }
+
+// }
+
+// #############################################################################################################################
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class main {
     public static void main(String[] args){
+        // String[] fruits={"orange", "apple", "pineapple", "banana"};
 
-        happyBirthday("ritesh", 25);
-        int age =21;
-        boolean res=check(age);
-        if(res){
-            System.out.println("you can sign up!");
+        // int n=fruits.length;
+        // fruits[0]="coconut";
+
+        // for(int i=0;i<n;i++){
+        //     System.out.print(fruits[i]+ " ");
+        // }
+        // String[] foods = new String[3];
+        // foods[0]="pizza";
+        // foods[1]="taco";
+        // foods[2]="hamburger";
+        Scanner scanner = new Scanner(System.in);
+        // String[] foods=new String[3];
+
+        // for(int i=0;i<foods.length;i++){
+        //     System.out.print("Enter a food: ");
+        //     foods[i]=scanner.nextLine();
+        // }
+
+        String[] foods;
+        int size;
+        System.out.println("What no of foods do u want:? ");
+        size=scanner.nextInt();
+        scanner.nextLine();
+        foods=new String[size];
+        for(int i=0;i<foods.length;i++){
+            System.out.print("Enter a food: ");
+            foods[i]=scanner.nextLine();
         }
-        else{
-            System.out.println("You are not eligible");
+
+
+
+        // Arrays.sort(fruits);
+        // Arrays.fill(fruits, "pineapples");
+        for(String fruit:foods){
+            System.out.println(fruit);
         }
-
-
-    }
-
-    static void happyBirthday(String name , int age){
-
-        System.out.println("Happy birthday " + name);
-        System.out.println("you are now "+ age + " years old");
-
-    }
-    static  boolean check(int age){
-        return age>=18;
-
     }
 
 }
+
+
 
 
 
