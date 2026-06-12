@@ -694,53 +694,109 @@
 // }
 
 // #############################################################################################################################
-import java.util.Arrays;
-import java.util.Scanner;
+// import java.util.Arrays;
+// import java.util.Scanner;
+
+// public class main {
+//     public static void main(String[] args){
+//         // String[] fruits={"orange", "apple", "pineapple", "banana"};
+
+//         // int n=fruits.length;
+//         // fruits[0]="coconut";
+
+//         // for(int i=0;i<n;i++){
+//         //     System.out.print(fruits[i]+ " ");
+//         // }
+//         // String[] foods = new String[3];
+//         // foods[0]="pizza";
+//         // foods[1]="taco";
+//         // foods[2]="hamburger";
+//         Scanner scanner = new Scanner(System.in);
+//         // String[] foods=new String[3];
+
+//         // for(int i=0;i<foods.length;i++){
+//         //     System.out.print("Enter a food: ");
+//         //     foods[i]=scanner.nextLine();
+//         // }
+
+//         String[] foods;
+//         int size;
+//         System.out.println("What no of foods do u want:? ");
+//         size=scanner.nextInt();
+//         scanner.nextLine();
+//         foods=new String[size];
+//         for(int i=0;i<foods.length;i++){
+//             System.out.print("Enter a food: ");
+//             foods[i]=scanner.nextLine();
+//         }
+
+
+
+//         // Arrays.sort(fruits);
+//         // Arrays.fill(fruits, "pineapples");
+//         for(String fruit:foods){
+//             System.out.println(fruit);
+//         }
+//     }
+
+// }
+
+// #############################################################################################################################
+// Vargs
+
+// public class main {
+//     public static void main(String[] args){
+
+//         System.out.println(add(1,2,3,4,5,6));
+
+//         // static int add(int... numbers){
+//         //     int sm=0;
+//         //     for(int num:numbers){
+//         //         sm+=num;
+
+//         //     }
+//         //     return sm;
+//         // }
+
+//     }
+
+//      static int add(int... numbers){
+//             int sm=0;
+//             for(int num:numbers){
+//                 sm+=num;
+
+//             }
+//             return sm;
+//         }
+
+
+// }
+
+
+// #############################################################################################################################
+// 2D arrray
 
 public class main {
     public static void main(String[] args){
-        // String[] fruits={"orange", "apple", "pineapple", "banana"};
+        String[] fruits={"orange", "apple", "banana"};
+        String[] vegetables={"potato, onion , carrot"};
+        String[] meats={"chicken", "forks", "fishj"};
 
-        // int n=fruits.length;
-        // fruits[0]="coconut";
+        String[][] groceries={fruits,vegetables,meats};
 
-        // for(int i=0;i<n;i++){
-        //     System.out.print(fruits[i]+ " ");
-        // }
-        // String[] foods = new String[3];
-        // foods[0]="pizza";
-        // foods[1]="taco";
-        // foods[2]="hamburger";
-        Scanner scanner = new Scanner(System.in);
-        // String[] foods=new String[3];
 
-        // for(int i=0;i<foods.length;i++){
-        //     System.out.print("Enter a food: ");
-        //     foods[i]=scanner.nextLine();
-        // }
+        for(String[] foods:groceries){
+            for(String food:foods){
+                System.out.print(food + " ");
+            }
 
-        String[] foods;
-        int size;
-        System.out.println("What no of foods do u want:? ");
-        size=scanner.nextInt();
-        scanner.nextLine();
-        foods=new String[size];
-        for(int i=0;i<foods.length;i++){
-            System.out.print("Enter a food: ");
-            foods[i]=scanner.nextLine();
+            System.out.println();
         }
 
 
-
-        // Arrays.sort(fruits);
-        // Arrays.fill(fruits, "pineapples");
-        for(String fruit:foods){
-            System.out.println(fruit);
-        }
     }
 
 }
-
 
 
 
