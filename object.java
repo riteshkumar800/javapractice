@@ -20,22 +20,26 @@ public class object {
         // String email;
         // int age;
 
-        User u1=new User();
-        User u2=new User("ritesh");
-        User u3=new User("ritesh", "gfds@gmail.com");
-        User u4=new User("ritesh", "gfsd@gmail.com",22);
+        // User u1=new User();
+        // User u2=new User("ritesh");
+        // User u3=new User("ritesh", "gfds@gmail.com");
+        // User u4=new User("ritesh", "gfsd@gmail.com",22);
 
-        System.out.println(u3.email);
+        // System.out.println(u3.email);
 
-        Car car1= new Car("mustang", "white" );
-        Car car2= new Car("lambo", "black");
-        Car car3=new Car("dodge", "black");
+        // Car car1= new Car("mustang", "white" );
+        // Car car2= new Car("lambo", "black");
+        // Car car3=new Car("dodge", "black");
 
-        Car[] car= {car1, car2, car3};
+        // Car[] car= {car1, car2, car3};
 
-        for(int i=0;i<3;i++){
-            car[i].drive();
-        }
+        // for(int i=0;i<3;i++){
+        //     car[i].drive();
+        // }
+
+        Dog d1=new Dog();
+
+        System.out.println(d1.isAlive);
 
 
 
