@@ -37,9 +37,14 @@ public class object {
         //     car[i].drive();
         // }
 
-        Dog d1=new Dog();
+        // Dog d1=new Dog();
 
-        System.out.println(d1.isAlive);
+        // System.out.println(d1.isAlive);
+
+        Student s1=new Student("kyojuro", "Rengoku", 8.72);
+        s1.showName();
+
+        
 
 
 

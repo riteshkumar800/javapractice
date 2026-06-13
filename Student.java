@@ -1,18 +1,21 @@
-public class Student {
+public class Student extends Person {
 
-    String name;
+    // String name;
+    // double gpa;
+    // int age;
+    // boolean isEnrolled;
+
     double gpa;
-    int age;
-    boolean isEnrolled;
 
-    Student(String name, int age, double gpa){
-        this.name=name;
-        this.age=age;
+    Student(String first, String last, double gpa){
+        super(first,last);
+        // this.first=first;
+        // this.last=last;
         this.gpa=gpa;
-        isEnrolled=true;
+        // isEnrolled=true;
 
     }
-    
+
 
     
 }
