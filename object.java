@@ -27,6 +27,16 @@ public class object {
 
         System.out.println(u3.email);
 
+        Car car1= new Car("mustang", "white" );
+        Car car2= new Car("lambo", "black");
+        Car car3=new Car("dodge", "black");
+
+        Car[] car= {car1, car2, car3};
+
+        for(int i=0;i<3;i++){
+            car[i].drive();
+        }
+
 
 
 
