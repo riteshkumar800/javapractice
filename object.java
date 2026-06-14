@@ -49,6 +49,10 @@ public class object {
         Fish fish=new Fish();
 
         cat.move();
+        dog.move();
+        fish.move();
+
+        
 
         
 
