@@ -41,8 +41,14 @@ public class object {
 
         // System.out.println(d1.isAlive);
 
-        Student s1=new Student("kyojuro", "Rengoku", 8.72);
-        s1.showName();
+        // Student s1=new Student("kyojuro", "Rengoku", 8.72);
+        // s1.showName();
+
+        Cat cat =new Cat();
+        Dog dog=new Dog();
+        Fish fish=new Fish();
+
+        cat.move();
 
         
 
