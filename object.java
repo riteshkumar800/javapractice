@@ -84,6 +84,9 @@ public class object {
 
     System.out.println(b3.displayInfo());
 
+    Library library= new Library("NYC public Library ", 1897 , books);
+    library.displayInfo();
+
 
 
 
