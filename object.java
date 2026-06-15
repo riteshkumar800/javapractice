@@ -44,15 +44,20 @@ public class object {
         // Student s1=new Student("kyojuro", "Rengoku", 8.72);
         // s1.showName();
 
-        Cat cat =new Cat();
-        Dog dog=new Dog();
-        Fish fish=new Fish();
+        //  Car car1= new Car("mustang", "white", 2026, "xyz" );
+        //  System.out.println(car1);
 
-        cat.move();
-        dog.move();
-        fish.move();
+        // Cat cat =new Cat();
+        // Dog dog=new Dog();
+        // Fish fish=new Fish();
 
-        
+        // cat.move();
+        // dog.move();
+        // fish.move();
+
+       // Shape shape =new Shape(); //not allowed
+
+
 
         
 
