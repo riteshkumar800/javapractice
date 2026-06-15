@@ -61,14 +61,20 @@ public class object {
     // //    System.out.println(circle.);
     // circle.display();
 
-    Rabbit rabbit = new Rabbit();
-    hawk hawk =new hawk();
-    rabbit.flee();
-    hawk.hunt();
+    // Rabbit rabbit = new Rabbit();
+    // hawk hawk =new hawk();
+    // rabbit.flee();
+    // hawk.hunt();
 
-    Fish fish = new Fish();
-    fish.flee();
-    fish.hunt();
+    // Fish fish = new Fish();
+    // fish.flee();
+    // fish.hunt();
+
+    Car car =new Car("dodge" , "black", 10000);
+    car.setColor("Blue");
+    car.setPrice(10000);
+
+    System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
 
 
 
