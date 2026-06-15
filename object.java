@@ -70,11 +70,20 @@ public class object {
     // fish.flee();
     // fish.hunt();
 
-    Car car =new Car("dodge" , "black", 10000);
-    car.setColor("Blue");
-    car.setPrice(10000);
+    // Car car =new Car("dodge" , "black", 10000);
+    // car.setColor("Blue");
+    // car.setPrice(10000);
 
-    System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
+    // System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
+
+    Book b1=new Book("sdfghjkg", 546);
+    Book b2=new Book("ertyuiop", 984);
+    Book b3=new Book("mnbgfew", 964);
+
+    Book[] books = {b1,b2,b3};
+
+    System.out.println(b3.displayInfo());
+
 
 
 

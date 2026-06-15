@@ -9,7 +9,8 @@ public class Book {
     }
 
     String displayInfo(){
-        return this
+        return this.title + " (" + this.pages+ ") pages";
     }
+    
     
 }
