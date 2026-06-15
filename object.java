@@ -56,6 +56,19 @@ public class object {
         // fish.move();
 
        // Shape shape =new Shape(); //not allowed
+    //    Circle circle= new Circle(5);
+    //    System.out.println(circle.area());
+    // //    System.out.println(circle.);
+    // circle.display();
+
+    Rabbit rabbit = new Rabbit();
+    hawk hawk =new hawk();
+    rabbit.flee();
+    hawk.hunt();
+
+    Fish fish = new Fish();
+    fish.flee();
+    fish.hunt();
 
 
 
