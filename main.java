@@ -810,29 +810,48 @@ public class main{
         Scanner scanner=new Scanner(System.in);
 
         // ArrayList<Integer> list =new ArrayList<>();
-        ArrayList<String> list =new ArrayList<>();
-        list.add("APPLE");
-        list.add("banana");
-        list.add("graphes");
-        list.add("orange");
+        // ArrayList<String> list =new ArrayList<>();
+        // list.add("APPLE");
+        // list.add("banana");
+        // list.add("graphes");
+        // list.add("orange");
 
-        // list.remove(2);
-        list.set(1, "pineapple");
-
-
-
-        System.out.println(list);
-
-        System.out.println(list.get(2));
-        System.out.println(list.size());
-
-        Collections.sort(list);
-                System.out.println(list);
+        // // list.remove(2);
+        // list.set(1, "pineapple");
 
 
-                for(String fruit:list){
-                    System.out.println(fruit);
-                }
+
+        // System.out.println(list);
+
+        // System.out.println(list.get(2));
+        // System.out.println(list.size());
+
+        // Collections.sort(list);
+        //         System.out.println(list);
+
+
+        //         for(String fruit:list){
+        //             System.out.println(fruit);
+        //         }
+
+        ArrayList<String> foods= new ArrayList<>();
+
+        System.out.print("Enter the # of food u would like: ");
+        int numOffood = scanner.nextInt();
+        scanner.nextLine();
+
+
+        for(int i=0;i<numOffood;i++){
+            System.out.println("Enter food #: " + i);
+            String food=scanner.nextLine();
+            foods.add(food);
+
+
+
+        }
+
+        System.out.println(foods);
+
 
         
 
