@@ -776,27 +776,31 @@
 // #############################################################################################################################
 // 2D arrray
 
-public class main {
-    public static void main(String[] args){
-        String[] fruits={"orange", "apple", "banana"};
-        String[] vegetables={"potato, onion , carrot"};
-        String[] meats={"chicken", "forks", "fishj"};
+// public class main {
+//     public static void main(String[] args){
+//         String[] fruits={"orange", "apple", "banana"};
+//         String[] vegetables={"potato, onion , carrot"};
+//         String[] meats={"chicken", "forks", "fishj"};
 
-        String[][] groceries={fruits,vegetables,meats};
-
-
-        for(String[] foods:groceries){
-            for(String food:foods){
-                System.out.print(food + " ");
-            }
-
-            System.out.println();
-        }
+//         String[][] groceries={fruits,vegetables,meats};
 
 
-    }
+//         for(String[] foods:groceries){
+//             for(String food:foods){
+//                 System.out.print(food + " ");
+//             }
 
-}
+//             System.out.println();
+//         }
+
+
+//     }
+
+// }
+
+// #############################################################################################################################
+// ARRAYLIST
+
 
 
 

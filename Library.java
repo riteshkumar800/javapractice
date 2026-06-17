@@ -2,7 +2,7 @@ public class Library {
 
     String name;
     int year;
-    Book[] books;
+    Book[] books;// library has a book, but book is a different thing means if library destroyed books will still be there
 
 
     Library(String name, int year, Book[] books ){
