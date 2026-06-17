@@ -800,7 +800,44 @@
 
 // #############################################################################################################################
 // ARRAYLIST
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
 
+public class main{
+    public static void main(String[] args){
+
+        Scanner scanner=new Scanner(System.in);
+
+        // ArrayList<Integer> list =new ArrayList<>();
+        ArrayList<String> list =new ArrayList<>();
+        list.add("APPLE");
+        list.add("banana");
+        list.add("graphes");
+        list.add("orange");
+
+        // list.remove(2);
+        list.set(1, "pineapple");
+
+
+
+        System.out.println(list);
+
+        System.out.println(list.get(2));
+        System.out.println(list.size());
+
+        Collections.sort(list);
+                System.out.println(list);
+
+
+                for(String fruit:list){
+                    System.out.println(fruit);
+                }
+
+        
+
+    }
+}
 
 
 
