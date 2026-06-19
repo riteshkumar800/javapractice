@@ -803,6 +803,7 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class main{
     public static void main(String[] args){
@@ -834,23 +835,54 @@ public class main{
         //             System.out.println(fruit);
         //         }
 
-        ArrayList<String> foods= new ArrayList<>();
+        // ArrayList<String> foods= new ArrayList<>();
 
-        System.out.print("Enter the # of food u would like: ");
-        int numOffood = scanner.nextInt();
-        scanner.nextLine();
-
-
-        for(int i=0;i<numOffood;i++){
-            System.out.println("Enter food #: " + i);
-            String food=scanner.nextLine();
-            foods.add(food);
+        // System.out.print("Enter the # of food u would like: ");
+        // int numOffood = scanner.nextInt();
+        // scanner.nextLine();
 
 
+        // for(int i=0;i<numOffood;i++){
+        //     System.out.println("Enter food #: " + i);
+        //     String food=scanner.nextLine();
+        //     foods.add(food);
 
+
+
+        // }
+
+        // System.out.println(foods);
+
+
+    //     try{
+    //     System.out.println(1/0);
+    // }
+    //     catch(ArithmeticException e){
+    //         System.out.println("division by zero is not allowed!");
+    //     }
+
+    // Scanner scanner=new Scanner(System.in);
+
+    try{
+        System.out.print("Enter a number: ");
+        int number=scanner.nextInt();
+        System.out.println(number);
+
+    }
+    // catch(ArithmeticException e){
+    //         System.out.println("division by zero is not allowed!");
+    //     }
+    //     catch(InputMismatchException e){
+    //         System.out.println("you have not entered  a number!");
+    //     }
+    catch(Exception e){
+        System.out.println("Something went wrong");
+    }
+        finally{
+            scanner.close();
+            System.out.println("This always Executes");
         }
 
-        System.out.println(foods);
 
 
         
