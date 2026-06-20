@@ -1,3 +1,7 @@
+import java.util.Timer;
+import java.util.TimerTask;
+
+
 public class object {
     public static void main(String[] args){
 
@@ -87,17 +91,44 @@ public class object {
     // Library library= new Library("NYC public Library ", 1897 , books); //remove library books will still be there
     // library.displayInfo();
 
-    Dog d1=new Dog();
-    d1.speak();
-    Dog d2= new Dog(){
-        @Override
-        void speak(){
-            System.out.println("dogs ruh ruh");
-        }
+    // Dog d1=new Dog();
+    // d1.speak();
+    // Dog d2= new Dog(){
+    //     @Override
+    //     void speak(){
+    //         System.out.println("dogs ruh ruh");
+    //     }
 
+    // };
+
+    // d2.speak();
+
+    Timer timer = new Timer();
+    TimerTask task=new TimerTask() {
+
+        int count=5;
+        @Override
+        public void run(){
+
+            System.out.println(count);
+            count--;
+            if(count<0){
+                System.out.println("HAPPY NEW YEAR");
+                timer.cancel();
+            }
+
+
+
+        }
+        
     };
 
-    d2.speak();
+    timer.scheduleAtFixedRate(task, 0, 1000);
+
+    
+
+
+
 
 
 
