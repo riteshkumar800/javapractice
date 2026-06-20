@@ -863,25 +863,36 @@ public class main{
 
     // Scanner scanner=new Scanner(System.in);
 
-    try{
-        System.out.print("Enter a number: ");
-        int number=scanner.nextInt();
-        System.out.println(number);
+    // try{
+    //     System.out.print("Enter a number: ");
+    //     int number=scanner.nextInt();
+    //     System.out.println(number);
 
-    }
-    // catch(ArithmeticException e){
-    //         System.out.println("division by zero is not allowed!");
+    // }
+    // // catch(ArithmeticException e){
+    // //         System.out.println("division by zero is not allowed!");
+    // //     }
+    // //     catch(InputMismatchException e){
+    // //         System.out.println("you have not entered  a number!");
+    // //     }
+    // catch(Exception e){
+    //     System.out.println("Something went wrong");
+    // }
+    //     finally{
+    //         scanner.close();
+    //         System.out.println("This always Executes");
     //     }
-    //     catch(InputMismatchException e){
-    //         System.out.println("you have not entered  a number!");
-    //     }
-    catch(Exception e){
-        System.out.println("Something went wrong");
-    }
-        finally{
-            scanner.close();
-            System.out.println("This always Executes");
-        }
+
+    Box<Integer> box= new Box();
+
+    // box.add(1);
+    // box.add(2);
+    // box.add(3);
+    box.setItem(1);
+    box.setItem(2);
+    box.setItem(3);
+
+    System.out.println(box.getItem(null));
 
 
 
