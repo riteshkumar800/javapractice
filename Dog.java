@@ -1,6 +1,6 @@
 public class Dog extends Animal {
 
-   void bark(){
+   void speak(){
         System.out.println("Dogs bark");
     }
 

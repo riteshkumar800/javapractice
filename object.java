@@ -76,16 +76,28 @@ public class object {
 
     // System.out.println(car.getColor() + " " + car.getModel() + " " + car.getPrice());
 
-    Book b1=new Book("sdfghjkg", 546);
-    Book b2=new Book("ertyuiop", 984);
-    Book b3=new Book("mnbgfew", 964);
+    // Book b1=new Book("sdfghjkg", 546);
+    // Book b2=new Book("ertyuiop", 984);
+    // Book b3=new Book("mnbgfew", 964);
 
-    Book[] books = {b1,b2,b3};
+    // Book[] books = {b1,b2,b3};
 
-    System.out.println(b3.displayInfo());
+    // System.out.println(b3.displayInfo());
 
-    Library library= new Library("NYC public Library ", 1897 , books); //remove library books will still be there
-    library.displayInfo();
+    // Library library= new Library("NYC public Library ", 1897 , books); //remove library books will still be there
+    // library.displayInfo();
+
+    Dog d1=new Dog();
+    d1.speak();
+    Dog d2= new Dog(){
+        @Override
+        void speak(){
+            System.out.println("dogs ruh ruh");
+        }
+
+    };
+
+    d2.speak();
 
 
 
