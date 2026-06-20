@@ -883,16 +883,26 @@ public class main{
     //         System.out.println("This always Executes");
     //     }
 
-    Box<Integer> box= new Box();
+    // Box<Integer> box= new Box();
 
-    // box.add(1);
-    // box.add(2);
-    // box.add(3);
-    box.setItem(1);
-    box.setItem(2);
-    box.setItem(3);
+    // // box.add(1);
+    // // box.add(2);
+    // // box.add(3);
+    // box.setItem(1);
+    // box.setItem(2);
+    // box.setItem(3);
 
-    System.out.println(box.getItem(null));
+    // System.out.println(box.getItem(null));
+
+    Product<String ,Double> p1=new Product<>("apple", 0.5);
+    Product<String ,Double> p2=new Product<>("orange",4.0);
+    Product<String ,Integer> p3= new Product<>("orange", 15);
+
+    System.out.println(p3.getPrice());
+
+
+
+
 
 
 
