@@ -802,6 +802,7 @@
 // ARRAYLIST
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Scanner;
 import java.util.InputMismatchException;
 
@@ -894,11 +895,32 @@ public class main{
 
     // System.out.println(box.getItem(null));
 
-    Product<String ,Double> p1=new Product<>("apple", 0.5);
-    Product<String ,Double> p2=new Product<>("orange",4.0);
-    Product<String ,Integer> p3= new Product<>("orange", 15);
+    // Product<String ,Double> p1=new Product<>("apple", 0.5);
+    // Product<String ,Double> p2=new Product<>("orange",4.0);
+    // Product<String ,Integer> p3= new Product<>("orange", 15);
 
-    System.out.println(p3.getPrice());
+    // System.out.println(p3.getPrice());
+
+
+
+    HashMap<String , Double> map= new HashMap<>();
+    map.put("apple", 0.5);
+    map.put("orange", 1.0);
+    map.put("banana", 2.0);
+
+    System.out.println(map);
+
+    map.put("orange", 3000.0);
+        System.out.println(map);
+
+        System.out.println(map.containsKey("pineapple"));
+
+
+        for(String key: map.keySet()){
+            System.out.println(key + " :$" + map.get(key) );
+        }
+
+
 
 
 
