@@ -37,11 +37,15 @@
 // }
 
 interface A{
-    void run();
+    // void run();
     void config();
 }
 
-class B implements A{
+interface X{
+    void run();
+}
+
+class B implements A,X{
     public void run(){
         System.out.println("running...");
     }
@@ -70,7 +74,7 @@ public class Demo
 {
     public static void main(String a[])
     {
-        A obj = new B();
+        B obj = new B();
 
         obj.run();
     }
