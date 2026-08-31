@@ -36,39 +36,39 @@
     
 // }
 
-interface A{
-    // void run();
-    void config();
-}
+// interface A{
+//     // void run();
+//     void config();
+// }
 
-interface X{
-    void run();
-}
+// interface X{
+//     void run();
+// }
 
-class B implements A,X{
-    public void run(){
-        System.out.println("running...");
-    }
-    public void config(){
-        System.out.println("configuring....");
-    }
-}
+// class B implements A,X{
+//     public void run(){
+//         System.out.println("running...");
+//     }
+//     public void config(){
+//         System.out.println("configuring....");
+//     }
+// }
 
-interface y extends X{
+// interface y extends X{
 
-}
+// }
 
-class Laptop{
-    public void code(){
-        System.out.println("code ,compile,run");
-    }
-}
+// class Laptop{
+//     public void code(){
+//         System.out.println("code ,compile,run");
+//     }
+// }
 
-class Developer{
-    public void devApp(Laptop lap){
-       lap.code();
-    }
-}
+// class Developer{
+//     public void devApp(Laptop lap){
+//        lap.code();
+//     }
+// }
 
 
 
@@ -85,6 +85,30 @@ class Developer{
 // {
 //     // No show() here
 // }
+class Computer{
+    public void code(){
+
+    }
+}
+
+class Laptop extends Computer{
+    public void code(){
+        System.out.println("code,compile, run");
+    }
+}
+
+class Desktop extends Computer{
+    public void code(){
+        System.out.println("code,compile,run,fastest");
+
+    }
+}
+
+class Developer{
+    public void devApp(Computer com){
+        com.code();
+    }
+}
 
 public class Demo
 {
@@ -94,9 +118,17 @@ public class Demo
 
         // obj.run();
 
-        Laptop lap=new Laptop();
-        Developer rk=new Developer();
-        rk.devApp(lap);
+        // Laptop lap=new Laptop();
+        // Developer rk=new Developer();
+        // rk.devApp(lap);
+
+        Computer lap=new Laptop();
+        Computer desk=new Desktop();
+
+        Developer dev=new Developer();
+        dev.devApp(desk);
+
+
 
     }
 }
