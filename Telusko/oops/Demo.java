@@ -54,6 +54,22 @@ class B implements A,X{
     }
 }
 
+interface y extends X{
+
+}
+
+class Laptop{
+    public void code(){
+        System.out.println("code ,compile,run");
+    }
+}
+
+class Developer{
+    public void devApp(Laptop lap){
+       lap.code();
+    }
+}
+
 
 
 
@@ -74,8 +90,13 @@ public class Demo
 {
     public static void main(String a[])
     {
-        B obj = new B();
+        // B obj = new B();
 
-        obj.run();
+        // obj.run();
+
+        Laptop lap=new Laptop();
+        Developer rk=new Developer();
+        rk.devApp(lap);
+
     }
 }
