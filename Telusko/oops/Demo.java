@@ -1,40 +1,56 @@
 
-class A{
+// class A{
     
-    public A(){
-        System.out.println("A in");
-    }
-    public A(int n){
-        System.out.println("A int in");
-    }
+//     public A(){
+//         System.out.println("A in");
+//     }
+//     public A(int n){
+//         System.out.println("A int in");
+//     }
 
-}
+// }
 
-class B extends A{
-    public B(){
-        System.out.println("B in");
-    }
-    public B(int n){
-        this();
-        // super(5);
-        System.out.println("B int in");
-    }
+// class B extends A{
+//     public B(){
+//         System.out.println("B in");
+//     }
+//     public B(int n){
+//         this();
+//         // super(5);
+//         System.out.println("B int in");
+//     }
 
-}
+// }
 
-public class Demo {
+// public class Demo {
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-        B obj = new B(5);
-        // A obj1=new B();
+//         B obj = new B(5);
+//         // A obj1=new B();
         
         
-    }
+//     }
 
 
     
+// }
+
+interface A{
+    void run();
+    void config();
 }
+
+class B implements A{
+    public void run(){
+        System.out.println("running...");
+    }
+    public void config(){
+        System.out.println("configuring....");
+    }
+}
+
+
 
 
 // class A
@@ -50,12 +66,12 @@ public class Demo {
 //     // No show() here
 // }
 
-// public class Demo
-// {
-//     public static void main(String a[])
-//     {
-//         A obj = new B();
+public class Demo
+{
+    public static void main(String a[])
+    {
+        A obj = new B();
 
-//         obj.show();
-//     }
-// }
+        obj.run();
+    }
+}
