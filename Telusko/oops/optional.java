@@ -11,6 +11,9 @@ public class optional {
         Optional<String> name = names.stream()
         .filter(str ->  str.contains("x"))
         .findFirst();
+
+
+        System.out.println(name.orElse("NOT FOUND"));
     
     
     
