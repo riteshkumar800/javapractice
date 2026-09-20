@@ -22,5 +22,24 @@ public class optional {
         
         
     }
+
+    class Student {
+    String name;
+
+    Student(String name) {
+        this.name = name;
+    }
+}
+
+Student s1 = new Student("Ritesh");
+
+Student s2 = new Student(s1.name);  // deep copy
+
+s2.name = "Rahul";
+
+System.out.println(s1.name);  // Ritesh
+System.out.println(s2.name);  // Rahul
     
 }
+
+
